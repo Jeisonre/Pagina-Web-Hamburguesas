@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas de la Juan Montalvo - Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <section id="cart-section">
+        <div id="finish-order-btn">Finalizar Pedido</div><br><br>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th></th> <!-- Columna adicional para botón de eliminar -->
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+        <div class="btns">
+            <label for="">Numero de mesa: 
+                <input class="num2" type="number" name="" id="numeroMesa" required>
+            </label>
+        </div>
+    </section><br><br>
+    <footer>
+        <a href="articulos.html"><button id="back-to-products-btn">Seguir Comprando</button></a>
+        <div id="total-price">Total a Pagar: $</div>
+        <button id="total">Finalizar Pedido</button>
+    </footer>
+    <br>
+
+    <div id="mensajeEnviar">
+        <p>¡Pedido enviado exitosamente!</p>
+    </div>
+    <div id="mensajeErrorEnviar">
+        <span id="cerrarMensaje" onclick="cerrarMensaje()"></span>
+        <p>¡Pedido no enviado!</p>
+    </div>
+    <div id="mensajeErrorMesa">
+        <span id="cerrarMensaje" onclick="cerrarMensaje()"></span>
+        <p>¡Ingrese el numero de mesa!</p>
+    </div>
+
+    <script src="carrito.js"></script>
+
+    <script type="module" src="conexion.js"></script>
+</body>
+</html>

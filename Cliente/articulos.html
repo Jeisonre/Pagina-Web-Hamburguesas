@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas de la Juan Montalvo - Artículos</title>
+    <link rel="stylesheet" href="articulos.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#"><img src="logo.png" alt="" id="logo"></a>
+        </div>
+        <h2>PRODUCTOS</h2>
+        <a href="carrito.html"><img src="cart-icon.png" alt="Carrito de Compras" id="cart-icon"></a>
+    </header>
+
+    <section>
+        <div class="product" id="product1">
+            <img class="img" src="product1.jpg" alt="Producto 1">
+            <div id="title">Ranchera Burger</div>
+            <div id="descrip">carne de res + queso cheddar + cebolla caramelizada + lechuga + salsa ranchera</div>
+            <div>Precio: $3.25</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar1('product1')">-</button>
+                <input class="num" type="number" id="numeroProduct1" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar1('product1')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product1', 'Ranchera Burger', 3.25, 1)">Añadir al Carrito</button></a>
+        </div>
+
+        <div class="product" id="product2">
+            <img class="img" src="product1.jpg" alt="Producto 2">
+            <div id="title">BBQ Burger</div>
+            <div id="descrip">carne de res + queso provolone + cebolla morada + tocino crujiente + salsa barbacoa</div>
+            <div>Precio: $4.50</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar2('product2')">-</button>
+                <input class="num" type="number" id="numeroProduct2" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar2('product2')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product2', 'BBQ Burger', 4.50, 1)">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product" id="product3">
+            <img class="img" src="product1.jpg" alt="Producto 3">
+            <div id="title">Mexicana Burger</div>
+            <div id="descrip">carne de res + queso oaxaca + pico de gallo + aguacate + salsa verde</div>
+            <div>Precio: $2.75</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar3('product3')">-</button>
+                <input class="num" type="number" id="numeroProduct3" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar3('product3')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product3', 'Mexicana Burger', 2.75, 1)">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product" id="product4">
+            <img class="img" src="product1.jpg" alt="Producto 4">
+            <div id="title">Clásica Burger</div>
+            <div id="descrip">carne de res + queso americano + lechuga + tomate + cebolla + salsa especial</div>
+            <div>Precio: $1.99</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar4('product4')">-</button>
+                <input class="num" type="number" id="numeroProduct4" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar4('product4')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product4', 'Clásica Burger', 1.99, 1)">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product" id="product5">
+            <img class="img" src="product1.jpg" alt="Producto 5">
+            <div id="title">Doble Queso Burger</div>
+            <div id="descrip">carne de res + queso cheddar + queso suizo + lechuga + tomate + cebolla morada</div>
+            <div>Precio: $4.25</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar5('product5')">-</button>
+                <input class="num" type="number" id="numeroProduct5" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar5('product5')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product5', 'Doble Queso Burger', 4.25, 1)">Añadir al carrito</button></a>
+        </div>
+
+        <div class="product" id="product6">
+            <img class="img" src="product1.jpg" alt="Producto 6">
+            <div id="title">Bacon Avocado Burger</div>
+            <div id="descrip">carne de res + queso provolone + tocino crujiente + aguacate + lechuga + tomate</div>
+            <div>Precio: $3.50</div><br>
+            <!-- <div class="controles">
+                <button class="btn" onclick="restar6('product6')">-</button>
+                <input class="num" type="number" id="numeroProduct6" oninput="validarMinimo()" value="1">
+                <button class="btn" onclick="sumar6('product6')">+</button>
+            </div><br> -->
+            <a href="carrito.html"><button class="add-to-cart-btn" onclick="agregarAlCarrito('product6', 'Bacon Avocado Burger', 3.50, 1)">Añadir al carrito</button></a>
+        </div>
+
+    </section>
+
+    <script src="articulos.js"></script>
+    <script src="carrito.js"></script>
+</body>
+</html>

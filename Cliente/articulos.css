@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: white;
+    color: #fff;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #ebebea;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+#logo {
+    max-width: 30px;
+    height: auto;
+}
+
+#cart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    background-color: #efefef;
+    /* border: 1px solid #ddd; */
+    padding: 15px;
+    margin: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.product #title {
+    text-transform: uppercase;
+}
+.product #descrip {
+    font-family: monospace;
+}
+
+.add-to-cart-btn{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    background: linear-gradient(90deg, #71b8ff 0%, #feffc7 100%);
+    padding: 10px 27px;
+    border: solid #a2ffaa 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.add-to-cart-btn:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background: linear-gradient(90deg, #71b8ff 0%, #feffc7 100%);
+    color: #0066cc;
+    border: solid 2px #0066cc;
+}
+
+.product .img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+/* Ocultar las flechas en el input de tipo número */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.product .controles {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+}
+
+.product .num {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #e8dada;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.product .btn {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #e8dada;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width:480px){
+    .img {
+        width: 100%;
+    }
+    .product {
+        width: 80%;
+    }
+}
