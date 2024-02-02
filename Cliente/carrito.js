@@ -41,5 +41,5 @@ function calcularTotal() {
 function actualizarTotalEnPantalla() {
     const total = calcularTotal();
     const totalPriceContainer = document.getElementById('total-price');
-    totalPriceContainer.textContent = `Total a Pagar: $${total.toFixed(2)}`;
+    totalPriceContainer.textContent = `Total: $${total.toFixed(2)}`;
 }

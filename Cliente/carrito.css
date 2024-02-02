@@ -63,7 +63,7 @@ footer {
 }
 
 #back-to-products-btn {
-    font-size: 10px;
+    font-size: 12px;
     background-color: #333;
     color: #fff;
     padding: 9px 18px;
@@ -76,9 +76,10 @@ footer {
     font-size: 15px;
     padding: 9px 18px;
     margin-top: 20px;
-    background-color: #00e1ff;
+    background-color: rgb(255, 0, 0);
     border: none;
     border-radius: 10px;
+    color: white;
 }
 
 #total {
@@ -183,6 +184,17 @@ span {
 @media only screen and (min-width: 320px) and (max-width:480px) {
     #cart-table {
         width: 100%;
+        font-size: 13px;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         font-size: 12px;
+        font-weight: bold;
+    }
+    #total-price {
+        width: 10%;
     }
 }
